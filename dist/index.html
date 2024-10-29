@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/booking.png" type="image/x-icon">
     <title>SAILOR</title>
     <link rel="stylesheet" href="./CSS/styles.css">
-</head>
-<body>
 
+</head>
+
+<body>
+    <header class="mx-5 md:mx-10 lg:mx-14">
+        <nav class="my-6">
+            <!-- Tablet , destop Navigation -->
+            <div class="flex items-center justify-between">
+
+                <div class="flex items-center gap-4">
+                    <img class="w-5 md:w-7" src="./assets/logo.png" alt="Logo">
+                    <h1 class=" text-lg md:text-2xl font-extrabold text-primary">SAILOR</h1>
+                </div>
+                <ul class="hidden lg:flex lg:gap-7 xl:gap-10">
+                    <li class="nav-btn actv"><a href="#">HOME</a></li>
+                    <li class="nav-btn pending"><a href="#">YACHTS</a></li>
+                    <li class="nav-btn pending"><a href="#">DESTINATIONS</a></li>
+                    <li class="nav-btn pending"><a href="#">SERVICES</a></li>
+                    <li class="nav-btn pending"><a href="#">ABOUT US</a></li>
+                </ul>
+                <div class="flex items-center gap-3">
+                    <button
+                        class="hidden md:flex items-center gap-2 px-4 xl:px-7 py-2 xl:py-3 border-2 border-primary rounded-xl text-base font-bold text-primary">
+                        <img src="./assets/booking.png" alt="booking_icon">
+                        Book Now
+                    </button>
+                    
+                    <button onclick="openHamburger()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-8  lg:hidden cursor-pointer text-primary ">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile  Navigation -->
+            <div 
+            id="hamburger"
+             class="hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#00000099]">
+
+                <div class=" w-full bg-white rounded-b-xl py-4">
+
+                    <button onclick="closeHamburger()" class=" absolute top-2 right-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="size-7">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+
+                    <ul class="text-center">
+                        <li class="nav-btn actv py-2 "><a href="#">HOME</a></li>
+                        <li class="nav-btn pending py-2"><a href="#">YACHTS</a></li>
+                        <li class="nav-btn pending py-2"><a href="#">DESTINATIONS</a></li>
+                        <li class="nav-btn pending py-2"><a href="#">SERVICES</a></li>
+                        <li class="nav-btn pending py-2"><a href="#">ABOUT US</a></li>
+                    </ul>
+                    <button
+                        class="mx-auto w-4/5  md:hidden  flex items-center justify-center gap-2 py-2 xl:py-3 border-2 border-primary rounded-xl text-base font-bold text-primary text-center">
+                        <img src="./assets/booking.png" alt="booking_icon">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
