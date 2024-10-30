@@ -1,11 +1,8 @@
-// Naviton button clike
-const navitonBtns = document.querySelectorAll('.nav-btn');
-const hamburgerNav = document.getElementById('hamburger')
-
-
-navitonBtns.forEach(navBtn => {
+//Navigation button clike
+const navigationBtns = document.querySelectorAll('.nav-btn');
+navigationBtns.forEach(navBtn => {
     navBtn.addEventListener('click', () => {
-         navitonBtns.forEach(btn =>{
+         navigationBtns.forEach(btn =>{
             btn.classList.remove('actv');
             btn.classList.add('pending');
          });
@@ -15,11 +12,13 @@ navitonBtns.forEach(navBtn => {
 
     })
 })
+// mobile navigation
 
+const hamburgerNav = document.getElementById('hamburger')
 const openHamburger = () =>{
     hamburgerNav.classList.remove('hidden')
 }
-
 const closeHamburger = () =>{
     hamburgerNav.classList.add('hidden')
 }
+

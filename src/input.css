@@ -18,3 +18,12 @@
 .pending{
   @apply text-base text-gray-600 font-medium
 }
+.backImage-height{
+  @apply pt-14 sm:pt-20 md:pt-32 lg:pt-40 xl:pt-52 pb-24 md:pb-40 lg:pb-60 
+}
+.sectionHeader{
+  @apply text-xl md:text-2xl text-primary text-center font-south_catalonia font-medium
+}
+.sectionTitle{
+  @apply text-2xl md:text-3xl text-sceondary text-center font-extrabold mt-2
+}
