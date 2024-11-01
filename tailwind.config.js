@@ -14,7 +14,10 @@ module.exports = {
       },
       backgroundImage: {
         'hero-image': "url('../assets/bannar.png')",
-      }
+      },
+      boxShadow: { 
+        'custom-white': '0.313rem 0.313rem 0 0.313rem #fff', 
+      },
     },
   },
   plugins: [

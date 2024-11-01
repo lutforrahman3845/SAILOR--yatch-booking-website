@@ -77,7 +77,8 @@
                     class=" font-south_catalonia text-center text-[10vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[153px] text-white font-medium select-none">
                     Sail into Luxury</h1>
             </div>
-            <div class=" bg-white/80 backdrop-blur-xl rounded-xl relative top-3 sm:-top-14 w-11/12  sm:w-fit mx-auto shadow-xl px-4 border border-base-300">
+            <div
+                class=" bg-white/80 backdrop-blur-xl rounded-xl relative top-3 sm:-top-14 w-11/12  sm:w-fit mx-auto shadow-xl px-4 border border-base-300">
                 <div class="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  xl:grid-cols-5 items-center">
                     <!-- location -->
                     <div class="py-7 border-b-2 sm:border-b-0 border-gray-400">
@@ -163,19 +164,64 @@
 
                     </div>
                     <!-- Scearch -->
-                     <div class="py-7 sm:px-4 sm:col-span-2   xl:col-span-1">
-                        <button class="py-4 w-full rounded-xl bg-primary text-base font-medium text-white">Search</button>
-                     </div>
+                    <div class="py-7 sm:px-4 sm:col-span-2   xl:col-span-1">
+                        <button
+                            class="py-4 w-full rounded-xl bg-primary text-base font-medium text-white">Search</button>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <main class="mx-5 md:mx-10 lg:mx-14 ">
         <!-- section:About -->
-         <section id="about" class=" py-14">
+        <section id="about" class=" py-14">
             <h1 class="sectionHeader ">about us</h1>
             <h1 class="sectionTitle">Sail excellence is our promise</h1>
-         </section>
+            <div class="mt-10 flex">
+                <div class="w-3/5 flex gap-7">
+                    <div>
+                        <img class="w-[400px] h-[490px]" src="./assets/about1.png" alt="Yachts image">
+                        <h1
+                            class="text-lg md:text-xl font-bold text-sceondary flex items-center gap-2 justify-end mt-6">
+                            <span class="text-2xl md:text-3xl lg:text-4xl">
+                                10
+                            </span>
+                            <span>
+                                <img src="./assets/yachts-logo.svg" alt="Yachts icon">
+                            </span>
+                            Years Of Experience
+                        </h1>
+                    </div>
+                    <div class="w-80 h-[526px] mt-10 relative  overflow-hidden">
+                        <div class="absolute inset-0 ">
+                            <img class="w-full h-full object-cover" src="./assets/about2.png" alt="" srcset="">
+                        </div>
+                        <div class="absolute w-28 h-28 -bottom-2 -right-2 bg-white rounded-tl-[50%] circleBtn p-4">
+                            <div class="absolute inset-3 border-[4px] border-primary rounded-full">
+                                <div class=" text-primary">
+                                    <svg class="w-full h-full p-2 " viewBox="0 0 100 100">
+                                        <defs>
+                                            <path id="circle" d="M 10 50 a 34 , 34 0 1 ,1  80 , 0 a 34 ,34 0 1 , 1 -80 ,0 "
+                                            stroke="black" fill="none"></path>
+                                        </defs>
+                                        <text class="text-base font-semibold fill-primary">
+                                            <textPath xlink:href="#circle">OUR STORY &nbsp; &nbsp; WATCH VIDEO</textPath>
+                                        </text>
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" w-2/5">
+                <div>
+
+                </div>
+
+            </div>
+        </section>
     </main>
     <script src="./js/script.js"></script>
 </body>

@@ -27,3 +27,7 @@
 .sectionTitle{
   @apply text-2xl md:text-3xl text-sceondary text-center font-extrabold mt-2
 }
+.circleBtn{
+  @apply before:content-[''] before:absolute before:bottom-2  before:-left-5 before:w-5 before:h-5 before:bg-transparent before:rounded-br-2xl before:shadow-custom-white 
+  after:content-[''] after:absolute after:-top-5  after:right-2 after:w-5 after:h-5 after:bg-transparent after:rounded-br-2xl after:shadow-custom-white 
+}
