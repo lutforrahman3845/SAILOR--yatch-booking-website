@@ -177,10 +177,11 @@
         <section id="about" class=" py-14">
             <h1 class="sectionHeader ">about us</h1>
             <h1 class="sectionTitle">Sail excellence is our promise</h1>
-            <div class="mt-10 flex">
-                <div class="w-3/5 flex gap-7">
-                    <div>
-                        <img class="w-[400px] h-[490px]" src="./assets/about1.png" alt="Yachts image">
+
+            <div class="mt-10 flex flex-col xl:flex-row items-center gap-8">
+                <div class="w-full xl:w-7/12 md:grid md:grid-cols-8 gap-12 ">
+                    <div class="col-span-4 hidden md:block">
+                        <img class=" w-full h-[490px]" src="./assets/about1.png" alt="Yachts image">
                         <h1
                             class="text-lg md:text-xl font-bold text-sceondary flex items-center gap-2 justify-end mt-6">
                             <span class="text-2xl md:text-3xl lg:text-4xl">
@@ -192,7 +193,8 @@
                             Years Of Experience
                         </h1>
                     </div>
-                    <div class="w-80 h-[526px] mt-10 relative  overflow-hidden">
+                    <div
+                        class=" col-span-4 2xl:col-span-3 w-full h-96  md:h-[526px] md:mt-10 relative rounded-t-3xl rounded-bl-3xl overflow-hidden">
                         <div class="absolute inset-0 ">
                             <img class="w-full h-full object-cover" src="./assets/about2.png" alt="" srcset="">
                         </div>
@@ -201,32 +203,86 @@
                                 <div class=" text-primary">
                                     <svg class="w-full h-full p-2 animate-spin-slow" viewBox="0 0 100 100">
                                         <defs>
-                                            <path id="circle" d="M 10 50 a 34 , 34 0 1 ,1  80 , 0 a 34 ,34 0 1 , 1 -80 ,0 "
-                                            stroke="black" fill="none"></path>
+                                            <path id="circle"
+                                                d="M 10 50 a 34 , 34 0 1 ,1  80 , 0 a 34 ,34 0 1 , 1 -80 ,0 "
+                                                stroke="black" fill="none"></path>
                                         </defs>
                                         <text class="text-base font-semibold fill-primary">
-                                            <textPath xlink:href="#circle">OUR STORY &nbsp; &nbsp; WATCH VIDEO</textPath>
+                                            <textPath xlink:href="#circle">OUR STORY &nbsp; &nbsp; WATCH VIDEO
+                                            </textPath>
                                         </text>
                                     </svg>
                                 </div>
-                                <div class="absolute inset-7 animate-bounce">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" class="size-6 fill-primary">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
-                                      </svg>
-                                      
+                                <div onclick="my_modal_3.showModal()" class="absolute inset-7 animate-bounce">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="none" class="size-6 fill-primary cursor-pointer">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                                    </svg>
+
                                 </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class=" w-2/5">
-                <div>
+                <div class="w-full xl:w-[35%]">
+                    <div>
+                        <h1
+                            class="md:max-w-xl text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-sceondary font-bold mt-8">
+                            Book
+                            Your Dream Yacht Today!</h1>
+                        <p class="md:max-w-xl text-base md:text-lg font-normal text-sceondary mt-3">Today, we are the
+                            leading brand for luxury performance motor yachts. We offer the most diverse product
+                            portfolio in the world. Each with its own personality, our yachts are engineered with the
+                            owner in mind and standing at the helm. </p>
+                        <div class="flex items-end gap-3">
+                            <div class="avatar-group -space-x-5 rtl:space-x-reverse mt-6">
+                                <div class="avatar">
+                                    <div class="w-12">
+                                        <img src="https://i.ibb.co.com/VQ4DwXj/Screenshot-2024-11-20-181425.jpg" />
+                                    </div>
+                                </div>
+                                <div class="avatar">
+                                    <div class="w-12">
+                                        <img
+                                            src="https://i.ibb.co.com/BgW7DdX/premium-photo-1678197937465-bdbc4ed95815.jpg" />
+                                    </div>
+                                </div>
+                                <div class="avatar">
+                                    <div class="w-12">
+                                        <img src="https://i.ibb.co.com/WyQQRw8/istockphoto-947296986-612x612.jpg" />
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div>
+                                <h4 class="text-xl md:text-2xl text-sceondary font-bold">10k+</h4>
+                                <p class="text-base font-medium text-sceondary">Sailed Horizon</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-
             </div>
+            <dialog id="my_modal_3" class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+                    <form method="dialog">
+                        <button
+                            class="bg-white rounded-full z-50 btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    </form>
+                    <div class="relative w-full max-h-[400px] overflow-hidden" style="aspect-ratio: 16/9;">
+
+                        <iframe id="youtube_video" class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/RktXtegZvNw?si=2-lA-AN0EkWUQTo0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </dialog>
+
         </section>
     </main>
     <script src="./js/script.js"></script>
