@@ -25,7 +25,7 @@
   @apply text-xl md:text-2xl text-primary text-center font-south_catalonia font-medium
 }
 .sectionTitle{
-  @apply text-2xl md:text-3xl text-sceondary text-center font-extrabold mt-2
+  @apply text-2xl md:text-3xl text-sceondary text-center font-extrabold mt-2 uppercase
 }
 .circleBtn{
   @apply before:content-[''] before:absolute before:bottom-2  before:-left-5 before:w-5 before:h-5 before:bg-transparent before:rounded-br-2xl before:shadow-custom-white 
@@ -33,4 +33,47 @@
 }
 .yachts_name {
   @apply  text-xl md:text-2xl  text-sceondary  font-bold mt-2
+}
+.sliderPart {
+  @apply  relative w-[442px] aspect-[3/4] px-2 md:px-4 xl:px-6 bg-white mb-6
+}
+.sliderPart >img{
+  @apply  block  w-full h-full object-cover select-none  rounded-lg md:rounded-xl lg:rounded-2xl 
+}
+.swiper-pagination-bullet{
+  @apply bg-primary w-3 h-3 rounded-full
+}
+.prv-btn{
+  @apply p-1 md:p-2   z-50 w-fit bg-white rounded-md
+}
+.prv-btn-icon{
+  @apply w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5
+}
+.prev-btn-cover{
+  @apply p-1 sm:p-2  bg-primary text-white  rounded-md 
+}
+.leftAdjustBfAf{
+  @apply  before:content-[''] before:absolute before:-bottom-2 before:left-0 md:before:left-1 before:w-2 before:h-2 before:bg-transparent before:rounded-tl-full before:shadow-sm-slider-shadow  md:before:shadow-slider-shadow
+
+  after:content-[''] after:absolute after:-top-2 after:left-0 md:after:left-1 after:w-2 after:h-2 after:bg-transparent after:rounded-bl-full after:shadow-sm-slider-shadow-2  md:after:shadow-slider-shadow-2
+}
+.rightAdjustBfAf{
+  @apply  before:content-[''] before:absolute before:-bottom-2 before:right-0 md:before:right-1 before:w-2 before:h-2 before:bg-transparent before:rounded-tr-full before:shadow-sm-slider-shadow-3  md:before:shadow-slider-shadow-3
+
+  after:content-[''] after:absolute after:-top-2 after:right-0 md:after:right-1 after:w-2 after:h-2 after:bg-transparent after:rounded-br-full after:shadow-sm-slider-shadow-4 md:after:shadow-slider-shadow-4
+}
+.title-location{
+  @apply text-xs md:text-base  xl:text-xl  font-bold flex  md:gap-2 text-center sm:text-left
+}
+.title-location > svg{
+  @apply hidden sm:block
+}
+.title-btn{
+  @apply px-1 py-1 md:px-12 md:py-4 bg-white/40 backdrop-blur-xl rounded md:rounded-xl text-xs md:text-xl font-semibold mt-4
+}
+.semiHeader{
+  @apply text-lg md:text-xl font-bold text-sceondary
+}
+.description{
+  @apply text-sm md:text-base text-sceondary font-normal
 }

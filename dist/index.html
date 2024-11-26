@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/booking.png" type="image/x-icon">
     <title>SAILOR</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
@@ -72,7 +73,7 @@
         <!-- Bannar -->
         <div>
 
-            <div class="relative backImage-height rounded-xl bg-hero-image bg-cover bg-center">
+            <div class="relative backImage-height rounded-xl bg-hero-image  bg-cover bg-center">
                 <h1
                     class=" font-south_catalonia text-center text-[10vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[153px] text-white font-medium select-none">
                     Sail into Luxury</h1>
@@ -284,11 +285,12 @@
             </dialog>
 
         </section>
-        <!--  section:About-->
+        <!--  section:Yacht-->
         <section id="yachts" class="py-14">
             <h1 class="sectionHeader ">our popular</h1>
             <h1 class="sectionTitle">YACHT SERIES</h1>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 mt-8 md:mt-14 gap-10">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 mt-8 md:mt-14 gap-10">
                 <!-- Yacht 1 -->
                 <div class="p-3 bg-white rounded-2xl shadow-xl">
                     <div class=" w-full h-96  relative rounded-t-2xl rounded-bl-2xl overflow-hidden">
@@ -324,7 +326,7 @@
                     </div>
 
                 </div>
-                 <!-- Yacht 2 -->
+                <!-- Yacht 2 -->
                 <div class="p-3 bg-white rounded-2xl shadow-xl">
                     <div class=" w-full h-96  relative rounded-t-2xl rounded-bl-2xl overflow-hidden">
                         <div class="absolute inset-0 ">
@@ -359,7 +361,7 @@
                     </div>
 
                 </div>
-                 <!-- Yacht 3 -->
+                <!-- Yacht 3 -->
                 <div class="p-3 bg-white rounded-2xl shadow-xl">
                     <div class=" w-full h-96  relative rounded-t-2xl rounded-bl-2xl overflow-hidden">
                         <div class="absolute inset-0 ">
@@ -394,7 +396,7 @@
                     </div>
 
                 </div>
-                 <!-- Yacht 4 -->
+                <!-- Yacht 4 -->
                 <div class="p-3 bg-white rounded-2xl shadow-xl">
                     <div class=" w-full h-96  relative rounded-t-2xl rounded-bl-2xl overflow-hidden">
                         <div class="absolute inset-0 ">
@@ -429,7 +431,7 @@
                     </div>
 
                 </div>
-                 <!-- Yacht 5 -->
+                <!-- Yacht 5 -->
                 <div class="p-3 bg-white rounded-2xl shadow-xl">
                     <div class=" w-full h-96  relative rounded-t-2xl rounded-bl-2xl overflow-hidden">
                         <div class="absolute inset-0 ">
@@ -466,7 +468,220 @@
                 </div>
             </div>
         </section>
+        <!-- section: Destination -->
+        <section id="destinations" class="py-14">
+            <h1 class="sectionHeader ">where to sail</h1>
+            <h1 class="sectionTitle mb-12">Popular Destinations</h1>
+            <div class=" w-full flex justify-center items-center ">
+                <div class="swiper w-full relative">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide sliderPart">
+                            <img src="../dist/assets/slider1.png" alt="Yacht location">
+                            <div class="title absolute bottom-8 left-1/2 -translate-x-1/2">
+                                <div class="text-white flex flex-col items-center">
+                                    <p class="title-location"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" width="20" height="20" fill="#ffff">
+                                            <path
+                                                d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z">
+                                            </path>
+                                        </svg> Levanto, Italy
+                                    </p>
+                                    <button class="title-btn"> Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sliderPart">
+                            <img src="../dist/assets/slider2.png" alt="Yacht location">
+                            <div class="title absolute bottom-8 left-1/2 -translate-x-1/2">
+                                <div class="text-white flex flex-col items-center">
+                                    <p class="title-location"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" width="20" height="20" fill="#ffff">
+                                            <path
+                                                d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z">
+                                            </path>
+                                        </svg> The French Riviera
+                                    </p>
+                                    <button class="title-btn"> Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sliderPart">
+                            <img src="../dist/assets/slider3.jpg" alt="Yacht location">
+                            <div class="title absolute bottom-8 left-1/2 -translate-x-1/2">
+                                <div class="text-white flex flex-col items-center">
+                                    <p class="title-location"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" width="20" height="20" fill="#ffff">
+                                            <path
+                                                d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z">
+                                            </path>
+                                        </svg> The Greek Islands
+                                    </p>
+                                    <button class="title-btn"> Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sliderPart">
+                            <img src="../dist/assets/slider4.jpeg" alt="Yacht location">
+                            <div class="title absolute bottom-8 left-1/2 -translate-x-1/2">
+                                <div class="text-white flex flex-col items-center">
+                                    <p class="title-location"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" width="20" height="20" fill="#ffff">
+                                            <path
+                                                d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z">
+                                            </path>
+                                        </svg>Whitsunday Islands
+                                    </p>
+                                    <button class="title-btn"> Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sliderPart">
+                            <img src="../dist/assets/slider5.jpg" alt="Yacht location">
+                            <div class="title absolute bottom-8 left-1/2 -translate-x-1/2">
+                                <div class="text-white flex flex-col items-center">
+                                    <p class="title-location"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" width="20" height="20" fill="#ffff">
+                                            <path
+                                                d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z">
+                                            </path>
+                                        </svg> Amalfi Coast
+                                    </p>
+                                    <button class="title-btn"> Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination relative"></div>
+                    <div
+                        class="previous cursor-pointer absolute top-1/2 -translate-y-1/2 sm:-left-1 lg:left-[7%] xl:lg:left-[4.4%]  prv-btn  leftAdjustBfAf">
+                        <div class="prev-btn-cover">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="prv-btn-icon" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="next cursor-pointer absolute top-1/2 -translate-y-1/2 right-0 sm:-right-1 lg:right-[7%] xl:right-[4.4%]  prv-btn  rightAdjustBfAf">
+                        <div class="prev-btn-cover">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="prv-btn-icon" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- cover div -->
+                    <div class=" absolute top-0 lg:w-[77px] xl:w-14  2xl:w-[83px] h-full bg-white z-40 hidden lg:block">
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 lg:w-[77px] xl:w-14  2xl:w-[83px] h-full bg-white z-40 hidden lg:block">
+                    </div>
+                    <!-- <div class="swiper-button-next"></div> -->
+                </div>
+            </div>
+        </section>
+        <!-- section: sailor-->
+        <section id="services" class="py-14">
+            <h1 class="sectionHeader ">sail with sailor</h1>
+            <h1 class="sectionTitle mb-12">Why Sail with Us</h1>
+            <div class="flex flex-col xl:flex-row items-center gap-20 justify-center">
+                <div
+                    class="w-full ml-4  xl:w-1/3 2xl:w-1/4 space-y-10 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-1 items-center">
+                    <div class="flex gap-6 items-center">
+                        <img class="w-14" src="./assets/Vector1.png" alt="">
+                        <div>
+                            <h1 class="semiHeader">Largest Choise of Yachts</h1>
+                            <p class="description">Featuring a diverse fleet from motor yachts to sailing yachts.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-center">
+                        <img class="w-14" src="./assets/ion_bed-outline.png" alt="">
+                        <div>
+                            <h1 class="semiHeader">Luxury Cabin</h1>
+                            <p class="description">Luxury yacht cabins ensure a lavish and relaxing experience for our
+                                guests.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-center">
+                        <img class="w-14" src="./assets/solar_tag-price-outline.png" alt="">
+                        <div>
+                            <h1 class="semiHeader">Good Pricing</h1>
+                            <p class="description">We determine a appealing price keeping a balance between value and
+                                quality.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="h-full xl:w-2/3 flex justify-end">
+                    <img class="xl:ml-10 w-11/12" src="./assets/p1 1.svg" alt="Yacht-img">
+                </div>
+            </div>
+
+        </section>
+        <!-- Section Seasonal Offer-->
+        <section class="py-14">
+            <div
+                class=" w-full bg-hero-pattern bg-no-repeat bg-center bg-cover rounded-lg md:rounded-xl lg:rounded-2xl">
+                <div class="py-20 flex  items-center">
+                    <div class="hidden lg:block lg:w-[50%] xl:w-[60%]"></div>
+                    <div class="lg:w-[50%] xl:w-[40%] mx-4">
+                        <h1 class="text-xl md:text-2xl text-white font-south_catalonia font-medium mb-2">Seasonal Offer
+                        </h1>
+                        <h1 class="text-3xl md:text-4xl 2xl:text-5xl text-white font-extrabold max-w-sm uppercase mb-10">15% off for booking this
+                            summer.</h1>
+                        <div class="flex items-center gap-6 xl:gap-12 mb-10">
+                            <div class="flex flex-col items-center">
+                                <div class="p-3 bg-white/30 backdrop-blur-md w-fit rounded-lg">
+                                    <img src="./assets/user.png" alt="user">
+                                </div>
+                                <h1 class="text-xl md:text-2xl font-bold text-white">40</h1>
+                                <h4 class="text-base font-medium text-white uppercase">Guests</h4>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="p-3 bg-white/30 backdrop-blur-md w-fit rounded-lg">
+                                    <img src="./assets/bed_white.png" alt="user">
+                                </div>
+                                <h1 class="text-xl md:text-2xl font-bold text-white">25</h1>
+                                <h4 class="text-base font-medium text-white uppercase">Bed</h4>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="p-4 bg-white/30 backdrop-blur-md w-fit rounded-lg">
+                                    <img src="./assets/captain.png" alt="user">
+                                </div>
+                                <h1 class="text-xl md:text-2xl font-bold text-white">5</h1>
+                                <h4 class="text-base font-medium text-white uppercase">Crew</h4>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-3 w-fit">
+                            <button class="py-5 px-9 bg-primary flex gap-2 items-start rounded-lg font-bold text-white">
+                                <img src="./assets/anchor.png" alt="anchor">
+                                Get In Touch
+                            </button>
+                            <button class="py-4 px-9 border-2 border-white  rounded-lg font-bold text-white">Learn
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section blogs and articles -->
+         <section class="py-14">
+            <h1 class="sectionHeader ">blogs and articles</h1>
+            <h1 class="sectionTitle mb-12">Articles on Yacht</h1>
+            <div class="grid grid-cols-4 grid-rows-4 gap-1 md:gap-3 xl:gap-5">
+                <div class="col-span-2 row-span-3"><img class="w-full h-full" src="./assets/Rectangle 1632.png" alt="" srcset=""></div>
+                <div class="col-span-2 row-span-2"><img class="w-full h-full" src="./assets/Rectangle 1633.png" alt="" srcset=""></div>
+                <div class="row-span-1"><img class="w-full h-full" src="./assets/Rectangle 1634.png" alt="" srcset=""></div>
+                <div class="row-span-1"><img class="w-full h-full" src="./assets/Rectangle 1635.png" alt="" srcset=""></div>
+            </div>
+         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
