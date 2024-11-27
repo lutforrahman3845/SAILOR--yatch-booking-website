@@ -32,7 +32,7 @@ modal.addEventListener("close", () => {
 });
 
 // swiper
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper("#first-swiper", {
   loop: true,
   effect: "coverflow",
   grabCursor: true,
@@ -49,7 +49,7 @@ const swiper = new Swiper(".swiper", {
     slideShadows: true,
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".first-swiper-pagination",
     clickable: true,
     dynamicBullets: true,
   },
@@ -85,7 +85,7 @@ const swiper = new Swiper(".swiper", {
 });
 
 function updateActiveSlideTitle() {
-  const slides = document.querySelectorAll(".swiper-slide");
+  const slides = document.querySelectorAll(".first-swiper-slide");
   slides.forEach((slide) => {
     const title = slide.querySelector(".title");
     if (slide.classList.contains("swiper-slide-active")) {
@@ -96,3 +96,37 @@ function updateActiveSlideTitle() {
   });
 }
 updateActiveSlideTitle();
+
+
+  const secondSwiper = new Swiper(".second-swiper", {
+    slidesPerView: 1, 
+    spaceBetween: 30, 
+    loop: true, 
+    pagination: {
+      el: ".second-swiper-pagination",
+      clickable: true,
+      dynamicBullets: true 
+    },
+    navigation: {
+      nextEl: ".second-swiper-button-next", 
+      prevEl: ".second-swiper-button-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 2, 
+      },
+      768: {
+        slidesPerView: 2, 
+      },
+      1280: {
+        slidesPerView: 3,
+      },
+      1536:{
+        slidesPerView:4
+      }
+    },
+  });
+
