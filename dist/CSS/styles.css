@@ -1981,10 +1981,6 @@ html{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-rows-3{
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
 .flex-col{
   flex-direction: column;
 }
@@ -2230,16 +2226,17 @@ html{
   padding: 0.5rem;
 }
 
-.p-20{
-  padding: 5rem;
-}
-
 .p-3{
   padding: 0.75rem;
 }
 
 .p-4{
   padding: 1rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-4{
@@ -2290,11 +2287,6 @@ html{
 .py-7{
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pt-6{
@@ -3099,6 +3091,10 @@ html{
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
+  .md\:grid-rows-3{
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -3109,11 +3105,6 @@ html{
 
   .md\:rounded-xl{
     border-radius: 0.75rem;
-  }
-
-  .md\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .md\:px-4{
@@ -3383,21 +3374,6 @@ html{
 
   .\32xl\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .\32xl\:px-96{
-    padding-left: 24rem;
-    padding-right: 24rem;
-  }
-
-  .\32xl\:px-3{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
-  .\32xl\:px-32{
-    padding-left: 8rem;
-    padding-right: 8rem;
   }
 
   .\32xl\:px-36{
